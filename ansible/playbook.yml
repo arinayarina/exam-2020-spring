@@ -3,12 +3,6 @@
   name: Simple nginx example Ansible Local
   become: yes
 
-  tasks:
-  - name: Add epel-release repo
-    yum:
-      name: epel-release
-      state: present
-
   - name: Install nginx
     yum:
       name: nginx
